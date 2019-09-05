@@ -116,3 +116,15 @@ while n <= 5:
         print('틀렸습니다.')
 end = time.time()
 print('걸린 시간은 {:.0f}초 입니다.'.format(end - start))
+
+
+while True:
+    print('1.문제 불러오기  2.타자게임  3.종료하기')
+    menu = input('메뉴를 선택하세요\n')
+    if menu == '1':
+        pass
+    elif menu == '2':
+        
+    elif menu == '3':
+        print('종료합니다.')
+        break
