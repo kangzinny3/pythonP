@@ -17,7 +17,7 @@ s7 = '''p                 # 따옴표 하나로는 줄바꿈 불가
         y 
         '''
 # 문자열 더하기
-head = 'Python'      # 하나가 숫자이면 실행이 안 됨 -> 타입이 같아야함
+head = 'Python'      # 하나가 int이면 실행이 안 됨 -> 타입이 같아야함
 tail = ' is fun!' 
 print(head + tail)   
 print(type(head))
