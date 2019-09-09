@@ -29,3 +29,6 @@ say_myself('지은', 26, man=False)  # man값을 설정하지않고 ('지은', 2
 
 # lambda 함수
    # lambda 매개변수1, 매개변수2 : 표현식
+add = lambda a, b: a + b
+result = add(3, 4)
+print(result)
