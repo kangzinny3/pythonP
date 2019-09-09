@@ -6,7 +6,6 @@ words = ['오렌지', '바나나', '강아지', '고양이', '토끼']
 
 with open('./basic/rank.pkl', 'rb') as f:
     rank = pickle.load(f)
-rank = {}
 
 while True:
     print('''
