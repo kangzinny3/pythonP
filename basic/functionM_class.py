@@ -6,6 +6,10 @@ class TypingGame:
     words = ['오렌지', '바나나', '강아지', '고양이', '토끼']
     rank = {} 
 
+    def __init__(self):
+        self.rankLoad()
+        while True:
+            self.exe(self.menuDisplay())
 
     def rankLoad(self):
         if os.path.exists('./rank.pik'):
@@ -124,7 +128,3 @@ class TypingGame:
         elif menu == '8':
             self.endGame()
 
-    def __init__(self):
-        self.rankLoad()
-        while True:
-            self.exe(self.menuDisplay())
