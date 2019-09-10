@@ -3,7 +3,7 @@ import random, time, pickle
 words = ['오렌지', '바나나', '강아지', '고양이', '토끼']
 rank = {} 
 
-# 문제 불러오기
+
 def rankLoad(r):
     rank = r
     with open('./rank.pkl', 'rb') as f:
@@ -12,7 +12,7 @@ def rankLoad(r):
 rankLoad(rank)
 
 
-# 문제 txt 저장하기
+# 문제 불러오기
 def wordLoadTxt(w):
     words = w
     f = open('./word.txt', 'r', encoding='utf8')   
@@ -24,7 +24,7 @@ def wordLoadTxt(w):
     f.close()
 
 
-# 문제 추가하기 
+# 문제 txt 저장하기 
 def wordSaveTxt(w):
     words = w
     f = open('./word.txt', 'r', encoding='utf8')
