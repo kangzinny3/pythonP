@@ -6,7 +6,7 @@ rank = {}
 # 문제 불러오기
 def rankLoad(r):
     rank = r
-    with open('./basic/rank.pkl', 'rb') as f:
+    with open('./rank.pkl', 'rb') as f:
         rank = pickle.load(f)   # 지역변수
     return rank
 rankLoad(rank)
@@ -14,7 +14,7 @@ rankLoad(rank)
 # 문제 txt 저장하기
 def wordLoadTxt(w):
     words = w
-    f = open('./basic/word.txt', 'r', encoding='utf8')   
+    f = open('./word.txt', 'r', encoding='utf8')   
     lines = f.readlines()
     for i in range(len(lines)):
         lines[i] = lines[i].replace('\n', '')
@@ -26,7 +26,7 @@ def wordLoadTxt(w):
 # 문제 추가하기 
 def wordSaveTxt(w):
     words = w
-    f = open('./basic/word.txt', 'r', encoding='utf8')
+    f = open('./word.txt', 'r', encoding='utf8')
     for i in words:
         data = ''
         data += i + '\n'
@@ -50,14 +50,14 @@ def wordAppend(w):
 # 문제를 피클로 저장
 def wordSavePik(w):
     words = w
-    with open('./basic/pickle.pkl', 'wb') as f:
+    with open('./pickle.pkl', 'wb') as f:
         pickle.dump(words, f)
 
 
 # 피클 문제 읽기
 def wordLoadPik(w):
     words = w
-    with open('./basic/pickle.pkl', 'rb') as f:
+    with open('./pickle.pkl', 'rb') as f:
         words = pickle.load(f)
     print(words)
 
@@ -101,7 +101,7 @@ def rankList(r):
 # 종료하기
 def endGame(r):
     rank = r
-    with open('./basic/rank.pkl', 'wb') as f:
+    with open('./rank.pkl', 'wb') as f:
         pickle.dump(rank, f)        
     print('종료합니다.')
     
