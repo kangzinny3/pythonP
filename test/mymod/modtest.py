@@ -8,6 +8,6 @@ print(sub(5, 2))
 print(sys.path)   # 경로가 다르므로 에러 발생
 
 # D:\ai\pythonP\test\mymod
-sys.path.append('D:/ai/pythonP/test/mymod/')
+
 print(sys.path)
 
