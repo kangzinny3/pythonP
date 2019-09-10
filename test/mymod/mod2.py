@@ -1,6 +1,10 @@
-from mod1 import *
-import sys
-print(add(2, 5))
-print(sub(5, 2))
+def add(a, b):
+    return a + b
 
-print(sys.path)
+def sub(a, b):
+    return a - b
+
+
+if __name__ == "__main__":      
+    print(add(1, 4))
+    print(sub(4, 2))
