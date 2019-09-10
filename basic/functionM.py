@@ -11,6 +11,7 @@ def rankLoad(r):
     return rank
 rankLoad(rank)
 
+
 # 문제 txt 저장하기
 def wordLoadTxt(w):
     words = w
