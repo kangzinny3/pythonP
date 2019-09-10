@@ -1,2 +1,6 @@
 import mymod.mod2
-import mymod.image.img
+from mymod.img import img
+
+
+mymod.mod2.add()
+img.img()
