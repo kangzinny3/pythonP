@@ -46,4 +46,5 @@ for row in rows:
         output.append(str(row[column_index]))
     print(output)
 
+conn.commit()
 conn.close()
