@@ -20,7 +20,7 @@ print(c.fetchone())
 conn.close()
 '''
 
-# 데이터 여러개 처리하기 - 리스트로 묶기
+# 데이터 여러개 처리하기 - 리스트로 묶어서 넣어주기
 # 하나의 데이터만 추가할때는 insert 사용
 purchases = [('2006-03-28', 'BUY', 'IBM', 1000, 45.00), 
             ('2006-04-05', 'BUY', 'MSFT', 1000, 72.00), 
@@ -38,3 +38,4 @@ for row in c.execute('select * from stocks ORDER BY price'):
     print(row)
 
 c.close()
+
