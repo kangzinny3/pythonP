@@ -25,4 +25,5 @@ conn.commit()     # 실행하는 내용이 변화가 있으면 commit해야 함
 conn.close()
 
 # sqlite expert에서 open database로 example.db 열기
+# stocks 클릭해서 확인
 
