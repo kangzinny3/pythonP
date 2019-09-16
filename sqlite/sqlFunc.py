@@ -36,4 +36,14 @@ def create_table(conn):
     conn.close()
 
 # 데이터 입력 함수
-
+def insert_books(conn):
+    c = conn.cursor() 
+    sql = 'insert into books values(?,?,?,?,?)'
+    items = [
+        ('빅데이터','2014-07-02','삼성',296,11),
+        ('안드로이드','2010-02-02','삼성',526,20), 
+        ('spring','2013-12-02','삼성',248,15)
+    ]
+    c.executemany(sql, items)
+    conn.commit()
+    conn.close()
