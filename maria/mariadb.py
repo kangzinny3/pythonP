@@ -13,7 +13,7 @@ sql = '''
     '''
 
 c.execute(sql)
-sql = "insert into stocks values ('2006-03-28','buy','rhat',100,35.14)"
+sql = "insert into stocks values ('2006-03-28','BUY','rhat',100,35.14)"
 c.execute(sql)
 conn.commit()
 conn.close()
