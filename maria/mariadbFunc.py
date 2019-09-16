@@ -61,3 +61,19 @@ def all_books(count = 0):
         #     print()    
     conn.close()    
 
+# 데이터 수정 함수
+def update_books():
+    conn = conn_db
+    c = conn.cursor()
+    # title이 빅데이터인 recommend를 200으로 수정
+    sql = '''update books
+            set recommend = %s where title = %s'''
+    c.execute(sql, 200, '빅데이터')
+    conn.commit()
+    conn.close()
+    
+# 데이터 삭제 함수
+def delete_books():
+    conn = conn_db
+    c = conn.cursor()
+    
