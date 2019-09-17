@@ -3,19 +3,79 @@
     <head>
         <title>문단 p태그, 줄바꿈 br태그</title>
     </head>
-    <body>
+    <body bgcolor="#FFFFD2">
+        <h1>제목1</h1>
+        <h2>제목2</h2>
+        <a href="#end">끝으로</a><br>      <!-- name을 end로 지정한 곳으로 이동-->
+        <a href="https://www.w3schools.com" target="_blank">사이트 참조</a><br>
+        <a href="http://www.naver.com" target="_blank" title="네이버 홈페이지 열기">네이버</a>
         <p align="right">
             문단 태그 
-            태그입력시 단락과 단락을 구분 지어 주는 역할
+            태그입력시 &nbsp; &nbsp; 단락과 단락을 구분 지어 주는 역할
+            <!-- &nbsp;  공백 출력
+                 &lt;  < 출력
+                 &gt;  > 출력
+                 &amp;  & 출력
+                 &quot;  "출력 -->
         </p>
-        <p>
+        <p style="height:1000px;">    <!-- 문단의 높이 지정 -->
             p태그는 문단을 의미하고
             br태그는 줄바꿈을 의미
         </p>
         <p>
             p태그는 문단을 의미하고<br>
-            br태그는 줄바꿈을 의미
+            br태그는 줄바꿈을 의미<br>
         </p>
+        <p>
+            <img src="http://post.phinf.naver.net/20150405_29/choi540_1428215979387s2zud_JPEG/mug_obj_142821597908867790.jpg" width="200" height="200">
+            <img src="강아지.jpg" width="200" height="200">    <!-- 같은 경로에 있을 때-->
+        </p>                                                   <!-- 하위폴더/파일이름, ../상위폴더/파일이름-->
+        <p>
+            <img src="Mount Ararat.jpg" width="200" height=200 align="left" hspace="10 vspace"15"> Mount Ararat is a snow-capped and dormant compound volcano in the extreme east of Turkey. 
+            It consists of two major volcanic cones: Greater Ararat and Little Ararat. Greater Ararat is the highest peak in Turkey and the Armenian plateau, with an elevation of 5,137 m (16,854 ft); Little Ararat's elevation is 3,896 m (12,782 ft). 
+            The Ararat massif is about 35 km (22 mi) wide at ground base. 
+            The first efforts to reach Ararat's summit were made in the Middle Ages. However, it was not until 1829 when Friedrich Parrot and Khachatur Abovian, accompanied by four others, made the first recorded ascent. 
+            Despite the scholarly consensus that the "mountains of Ararat" of the Book of Genesis (8:4) do not refer specifically to Mount Ararat, it has been widely accepted in Christianity as the resting place of Noah's Ark. 
+            It is the principal national symbol of Armenia and has been considered a sacred mountain by Armenians. 
+            It is featured prominently in Armenian literature and art and is an icon for Armenian irredentism. Along with Noah's Ark, it is depicted on the coat of arms of Armenia.
+            This picture is a panorama of Mount Ararat and the Ararat Plain as seen from near the city of Artashat, Armenia, showing both Little Ararat (left) and Greater Ararat (right). 
+            The historic Khor Virap monastery can be seen in the background on the far left.
+        </p>
+        <p>
+            <table border="1">
+                <tr>
+                <td>1*1 셀</td>
+                <td>1*2 셀</td>
+                </tr>
+                <tr>
+                <td>2*1 셀</td>
+                <td>2*2 셀</td>
+                </tr>
+            </table>
+        </p>
+        <p>   <!-- 열 확장 -->
+            <table border="1">
+                <tr>
+                <td colspan="2">1*1 셀</td>
+                </tr>
+                <tr>
+                <td>2*1 셀</td>
+                <td>2*2 셀</td>
+                </tr>
+            </table>
+        </p>
+        <p>   <!-- 행 확장 --> 
+            <table border="1">
+                <tr>
+                <td rowspan="2">1*1 셀</td>
+                <td>1*2 셀</td>
+                </tr>
+                <tr>
+                <td>2*2 셀</td>
+                </tr>
+            </table>
+        </p>
+        <a name="end">끝</a>
     </body>
 </html>
 
@@ -24,4 +84,3 @@
 
 
 
-<!-- https://www.w3schools.com/ 사이트 참조-->
