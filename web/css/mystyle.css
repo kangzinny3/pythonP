@@ -1,5 +1,6 @@
-/* *{color: gray;} */
+/* 공통 선택자 *{color: gray;} */
 
 td div{background-color: hotpink;}
 p.red{color:red;}
+p{color:blueviolet;}
 p{color:chocolate;}
