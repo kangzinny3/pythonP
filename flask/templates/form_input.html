@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>flask test</title>
+    </head>
+    <body>
+        <form action="/method" method="POST"">
+            <input type="text" name=" username"> <br>
+            <input type="password" name="password"> <br>
+            <input type="submit" value="확인"> 
+        </form>
+    </body>
+</html>
+
+<!-- http://127.0.0.1/method/?+username=%EC%A7%80%EC%9D%80&password=1234 에서-->
+<!-- ? 이후 부분이 쿼리 스트링 (method="GET"으로 설정해서 get방식으로 넘어왔을 때)-->
+<!-- method="POST"로 설정해서 post방식일 때는 URL에 안뜸 (route에서 post설정해주어야함)-->
