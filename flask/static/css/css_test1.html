@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>css 연습</title>
+        <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&amp;subset=korean" rel="stylesheet">
+        <!-- 외부 스타일 시트 -->
+        <!-- <link rel="stylesheet" type="text/css" href="mystyle.css"> -->
+        <!-- 내부 스타일 시트 -->
+        <style>
+            p{color:lightcoral;}
+            p {font-family: "Nanum Gothic", sans-serif;
+               font-size: 23px;
+            }
+            body {
+                background-image: url("배경이미지.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        </style>
+    </head>
+    <body>
+        <p class="red" style="color:cornflowerblue; direction: rtl;">
+            첫 번째 단락
+        </p>
+        <p class="red"> 
+            <!-- <div>두 번째 단락 <div style="background-color: gold;">배경색</div>을 지정하는 내용의 스타일시트       </div> -->
+            <div>두 번째 단락 <span style="background-color:gold;">배경색</span>을 지정하는 내용의 스타일시트       </div>    
+        </p>
+        <p class="blue">
+            세 번째 단락
+        </p>
+        <table border="1">
+            <tr>
+                <td class="red">
+                    <div>첫 번째 칸</div>
+                </td>
+                <td class="red">
+                    두 번째 칸
+                </td>            
+            </tr>
+        </table>
+    </body>
+</html>
