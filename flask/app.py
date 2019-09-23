@@ -1,4 +1,4 @@
-from flask import Flask,render_template,request
+from flask import Flask, render_template, request, redirect, url_for
 import mariadbfunc as db
 app=Flask(__name__)
 
@@ -15,7 +15,8 @@ def insertbook():
     data = (request.form['title'], request.form['date'], request.form['publisher'], request.form['pages'], request.form['recommend'])
     db.create_table()
     db.insert_books(data)
-    return "db입력완료"
+    return redirect(url_for('booklist'))
+    # route를 호출하지 못하는 경우 함수를 직접적으로 호출할 때 url_for(함수이름) 사용
 
 @app.route('/booklist')
 def booklist():
