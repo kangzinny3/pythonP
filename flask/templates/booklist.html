@@ -20,7 +20,7 @@
           {% for book in books %}
           <tr>
             <th scope = "row">{{loop.index}}</th>
-            <td>{{book[0]}}</td>
+            <td><a href="/content/{{book[0]}}">{{book[0]}}</a></td>  <!--{{book[0]}} : 책제목-->
             <td>{{book[1]}}</td>
             <td>{{book[2]}}</td>
             <td>{{book[3]}}</td>
