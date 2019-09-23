@@ -29,7 +29,7 @@ def insertbook():
 def booklist():
     return render_template('booklist.html')
 
-@app.route('/method/', methods=['GET', 'POST'])   # methods 안적으면 get이 기본
+@app.route('/method/', methods=['GET', 'POST'])   # methods 안적으면 get 방식이 기본
 def login():                                      # /method 만 하고 /method/로 호출하면 Not Found
     if request.method == 'POST':                  # /method/ 하고 /method로 호출해도 자동으로 /method/로 호출됨
         name =  request.form['username'] 
