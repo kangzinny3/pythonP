@@ -18,7 +18,7 @@ def insertbook():
     db.create_table()
     db.insert_books(data)
     return redirect(url_for('booklist'))
-    # route를 호출하지 못하는 경우 함수를 직접적으로 호출할 때 url_for(함수이름) 사용
+    # route에서 주소값을 호출하지 못하는 경우 함수를 직접적으로 호출할 때 url_for(함수이름) 사용
 
 @app.route('/booklist')
 def booklist():
@@ -31,6 +31,11 @@ def booklist():
 def content(title):         # 꼭 매개변수(여기서는 title) 값 전달받아야 함
     book = db.where_book(title)
     return render_template('content.html', book = book)
+
+@app.route('/delete/<title>')
+def delete(title):
+    db.delete(title)
+    return redirect('/booklist')
 
 if __name__ == '__main__':
     app.run(debug=True,port=80)
