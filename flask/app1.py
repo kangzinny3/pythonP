@@ -15,9 +15,10 @@ def formTest():
 
 if __name__ == '__main__':          # 파일 내에서 호출하면 __main__
     app.run(debug=True, port=80)    # import해서 호출하면 파일명(__name__)
+  # 생성된 객체를 run 메서드로 동작시켜줌
   # debug=True -> html문서 등의 내용들이 바뀔 때 알아서 인지
   # port=80 -> port번호를 변경하고자 하는 경우 입력
 # 그냥 app.run()만 해도 되지만, 그럴 경우에 다른 데서 import했을 때 자동 실행되버림
 
-# app.py와 같은 위치에 templates폴더, teplates폴더 안에 html문서
-# app.py와 같은 위치에 static폴더, static폴더 안에 html제외 다른 문서들 -> 문서가 많아지면 하위폴더로 구분
+# app1.py와 같은 위치에 templates폴더, teplates폴더 안에 html문서
+# app1.py와 같은 위치에 static폴더, static폴더 안에 html제외 다른 문서들 -> 문서가 많아지면 하위폴더로 구분
