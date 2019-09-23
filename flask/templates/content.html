@@ -5,7 +5,7 @@
             <h1 style="text-align: center">'{{book[0]}}' 의 정보</h1>
         <br>    
         <div class="container">
-                <form action="/insertbook" method="POST" >
+                <form action="/update" method="POST" >
                         <div class="form-group row">
                           <label for="title" class="col-sm-2 col-form-label">책제목</label>
                           <div class="col-sm-10">
@@ -38,7 +38,13 @@
                         </div>
                         <div class="form-group row">
                           <div class="col-sm-10">
-                            <button type="submit" class="btn btn-primary">Sign in</button>
+                            <button type="submit" class="btn btn-primary">수정</button>
+                          </div>
+                        <div class="form-group row">
+                          <div class="col-sm-10">
+                            <a href="/delete/{{book[0]}}">
+                            <button type="button" class="btn btn-primary">삭제</button>
+                            </a>
                           </div>
                         </div>
                 </form>
