@@ -17,17 +17,27 @@
           </tr>
         </thead>
         <tbody>
-
+          {% for book in books %}
           <tr>
+            <th scope = "row">{{loop.index}}</th>
+            <td>{{book[0]}}</td>
+            <td>{{book[1]}}</td>
+            <td>{{book[2]}}</td>
+            <td>{{book[3]}}</td>
+            <td>{{book[4]}}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+
+          <!-- <tr>
             <th scope="row">1</th>
             <td>Mark</td>
             <td>Otto</td>
             <td>@mdo</td>
             <td>Otto</td>
             <td>@mdo</td>
-          </tr>
-         
-        </tbody>
+          </tr> -->
+    
     </table>
 </div>
 {% endblock %}
