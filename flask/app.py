@@ -19,8 +19,9 @@ def insertbook():
 
 @app.route('/booklist')
 def booklist():
-    return render_template('booklist.html')
+    books = db.all_books()
+    print(books)
+    return render_template('booklist.html', books = books)
 
-if __name__=='__main__':
+if __name__ == '__main__':
     app.run(debug=True,port=80)
-    
