@@ -53,3 +53,14 @@ def all_books(count=0):
             print(book) 
     conn.close()
     return books
+
+# 조건 지정
+def where_book(where_v):
+    conn = conn_db()
+    cursor = conn.cursor()
+    sql = 'select * from books where title=%s'   # title이 입력받은 문자(%S)와 같은지
+    cursor.execute(sql, where_v)
+    book = cursor.fetchone()
+    print(book)
+    conn.close()
+    return book
