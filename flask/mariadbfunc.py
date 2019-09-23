@@ -74,3 +74,8 @@ def delete(title):
     conn.commit()
     conn.close()
 
+# 수정 함수
+def update():
+    conn = conn_db()
+    cursor = conn.cursor()
+    sql = 'update books set'
