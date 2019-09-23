@@ -64,3 +64,13 @@ def where_book(where_v):
     print(book)
     conn.close()
     return book
+
+# 삭제 함수
+def delete(title):
+    conn = conn_db()
+    cursor = conn.cursor()
+    sql = 'delete from books where title=%s'
+    cursor.execute(sql, title)
+    conn.commit()
+    conn.close()
+
