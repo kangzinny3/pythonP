@@ -16,7 +16,7 @@ pw = 'wldmsdl1219!'
 # time.sleep(5)
 driver.execute_script("document.getElementsByName('id')[0].value=\'" + userid + "\'")
 driver.execute_script("document.getElementsByName('pw')[0].value=\'" + pw + "\'") 
-# document.getElementsByName : JS 메서드
+        # document.getElementsByName : JS 메서드
 
 
 # element창 로그인버튼 소스 선택된 상태에서 마우스 오른쪽 버튼 클릭 Copy Xpath
