@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 from selenium import webdriver
 import time
 
-# 셀레니움을 통한 브라우저 제어를 시도
+
 driver = webdriver.Chrome('/ai/pythonP/selenium/chromedriver')
 driver.get('https://www.istarbucks.co.kr/store/store_map.do')
 driver.get('https://www.istarbucks.co.kr/store/store_map.do')
